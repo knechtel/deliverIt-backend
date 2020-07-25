@@ -20,19 +20,22 @@ A utilização dessas tecnologias será considerado um diferencial.
 Serviços
 
 ● Inclusão de conta a pagar
-○ Nome: Texto
-○ Valor Original: Numeral
-○ Data de Vencimento: Data
-○ Data de Pagamento: Data
+<p>○ Nome: Texto</p>
+<p>○ Valor Original: Numeral</p>
+<p>○ Data de Vencimento: Data</p>
+<p>○ Data de Pagamento: Data</p>
 
 ● Listagem das contas cadastradas
-○ Nome: Texto
-○ Valor Original: Numeral
-○ Valor Corrigido: Numeral
-○ Quantidade de dias de atraso: Numeral
-○ Data de Pagamento: Data
+
+<p>○ Nome: Texto</p>
+<p>○ Valor Original: Numeral</p>
+<p>○ Valor Corrigido: Numeral</p>
+<p>○ Quantidade de dias de atraso: Numeral</p>
+<p>○ Data de Pagamento: Data</p>
+
 Regras de Negócio
 
 <br>
 <img src='https://1.bp.blogspot.com/-KH6xjgpOgvU/Xxu2iQ1QQjI/AAAAAAAAJKw/ZNACuRQVqEAaOnAF-d5WBAdV1BElv-uGQCLcBGAsYHQ/s1600/Screen%2BShot%2B2020-07-25%2Bat%2B01.34.38.png'/>
 </br>
+➔ A quantidade de dias em atraso e a regra para o cálculo, devem ser persistidos. 
