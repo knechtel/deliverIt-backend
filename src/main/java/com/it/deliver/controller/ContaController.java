@@ -17,6 +17,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api")
 public class ContaController {
     @Autowired
     private ContaService contaService;
