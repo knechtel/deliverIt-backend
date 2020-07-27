@@ -1,0 +1,18 @@
+version: "3"
+services:
+  deliver:
+    image: deliver
+    ports:
+      - "8081:8081"
+    links:
+      - mariadb
+
+  mariadb:
+    container_name: mariadb
+    image: 'mariadb:latest'
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_DATABASE=deliver
+      - MYSQL_ROOT_HOST=%
+    ports:
+      - "3306:3306"
