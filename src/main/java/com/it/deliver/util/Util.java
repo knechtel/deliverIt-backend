@@ -15,5 +15,10 @@ public class Util {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         return date.format(formatter);
     }
+    public static Double truncateTo(Double value){
+        String sValue = (String) String.format("%.2f", value);
+        Double newValue = Double.parseDouble(sValue);
+        return  newValue;
+    }
 
 }

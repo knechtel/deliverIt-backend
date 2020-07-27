@@ -3,6 +3,7 @@ package com.it.deliver.service;
 import com.it.deliver.bean.Conta;
 import com.it.deliver.dao.ContaDAO;
 import com.it.deliver.dto.ContaDto;
+import com.it.deliver.util.Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -48,7 +49,7 @@ public class ContaService {
             Long dias = ChronoUnit.DAYS.between(conta.getDataVencimento(), conta.getDataPagamento());
             ContaDto contaDto = new ContaDto();
             contaDto = contaDto.contaToDto(conta);
-            contaDto.setValorCorrigido(getValorCorrigido(dias,conta.getId()));
+            contaDto.setValorCorrigido(Util.truncateTo(getValorCorrigido(dias,conta.getId())));
             listContaDto.add(contaDto);
         }
         return listContaDto;
