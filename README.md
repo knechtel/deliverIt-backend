@@ -67,14 +67,14 @@ Desenvolver um Serviço Rest para tratar as regras de negócio descritas abaixo.
 Diferenciais
 
 A utilização dessas tecnologias será considerado um diferencial.
-- Java 8
-- Spring
-- JPA
-- Maven/ Gradle
-- Liquibase / Flyway
-- Junit
-- Caso deseje a criação de um Front em AngularJs (O layout não será avaliado)
-- Recurso de conteinerização.
+- Java 8 (foi utilizado)
+- Spring (foi utilizado)
+- JPA (foi utilizado)
+- Maven (foi utilizado)/ Gradle
+- Liquibase(foi utilizado) / Flyway
+- Junit (foi utilizado)
+- Caso deseje a criação de um Front em AngularJs-(utilizado Angular 8)- (O layout não será avaliado)
+- Recurso de conteinerização. Docker
 Serviços
 
 ● Inclusão de conta a pagar
