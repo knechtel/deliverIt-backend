@@ -1,6 +1,7 @@
 version: "3"
 services:
   deliver:
+    container_name: deliver
     image: deliver
     build:
       context: .
