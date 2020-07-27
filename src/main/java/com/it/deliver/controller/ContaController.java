@@ -2,7 +2,6 @@ package com.it.deliver.controller;
 
 import com.it.deliver.bean.Conta;
 import com.it.deliver.bean.RegraJuros;
-import com.it.deliver.dao.RegraJurosDAO;
 import com.it.deliver.dto.ContaDto;
 import com.it.deliver.service.ContaService;
 import com.it.deliver.service.RegraJurosService;
