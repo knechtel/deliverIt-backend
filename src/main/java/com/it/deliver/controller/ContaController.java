@@ -30,7 +30,6 @@ public class ContaController {
         RegraJuros regraJuros = regraJurosService.findByDays(dias);
         conta.setRegraJuros(regraJuros);
         conta = contaService.insere(conta);
-        System.out.println("dias = " + dias);
         return contaDto;
     }
 
@@ -43,7 +42,7 @@ public class ContaController {
     }
 
     @RequestMapping(value = "contas", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
-    public List<Conta> findAll() {
+    public List<ContaDto> findAll() {
         return contaService.findAll();
     }
 }

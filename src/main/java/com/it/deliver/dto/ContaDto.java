@@ -67,9 +67,15 @@ public class ContaDto {
         conta.setDataPagamento(Util.stringToLocalDate(contaDto.dataPagamento));
         conta.setDataVencimento(Util.stringToLocalDate(contaDto.dataVencimento));
         conta.setValorOriginal(contaDto.valorOriginal);
-
-
-
         return conta;
+    }
+    public ContaDto contaToDto(Conta conta){
+        ContaDto contaDto = new ContaDto();
+        contaDto.setId(conta.getId());
+        contaDto.setNome(conta.getNome());
+        contaDto.setValorOriginal(conta.getValorOriginal());
+        contaDto.setDataPagamento(Util.localDateToSring(conta.getDataPagamento()));
+        contaDto.setDataVencimento(Util.localDateToSring(conta.getDataVencimento()));
+        return contaDto;
     }
 }

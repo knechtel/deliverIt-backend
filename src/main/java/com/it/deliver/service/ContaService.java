@@ -2,9 +2,12 @@ package com.it.deliver.service;
 
 import com.it.deliver.bean.Conta;
 import com.it.deliver.dao.ContaDAO;
+import com.it.deliver.dto.ContaDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -39,7 +42,15 @@ public class ContaService {
     public Conta findById(Integer id){
         return contaDAO.findById(id).orElse(null);
     }
-    public List<Conta> findAll(){
-        return (List<Conta>) contaDAO.findAll();
+    public List<ContaDto> findAll(){
+        List<ContaDto>listContaDto = new ArrayList<>();
+        for (Conta conta: contaDAO.findAll()) {
+            Long dias = ChronoUnit.DAYS.between(conta.getDataVencimento(), conta.getDataPagamento());
+            ContaDto contaDto = new ContaDto();
+            contaDto = contaDto.contaToDto(conta);
+            contaDto.setValorCorrigido(getValorCorrigido(dias,conta.getId()));
+            listContaDto.add(contaDto);
+        }
+        return listContaDto;
     }
 }
