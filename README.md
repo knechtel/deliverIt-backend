@@ -1,4 +1,37 @@
 # deliverIt-backend
+
+Considerações 
+
+Caso tenha dificuldade com configuração do banco de dados a URL do banco de dados fica no:
+
+application.properties
+
+e na 
+  ```
+package com.it.deliver;
+
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
+
+@Configuration
+public class DataSourceConfig {
+    @Bean
+    public DataSource datasource() {
+        return DataSourceBuilder.create()
+                .driverClassName("org.mariadb.jdbc.Driver")
+                .url("jdbc:mariadb://mariadb/deliver")
+                .username("root")
+                .password("123")
+                .build();
+    }
+}
+  ```
+
+
+
 PREMISSA
 Desenvolver um Serviço Rest para tratar as regras de negócio descritas abaixo.
 - Linguagem: Java
