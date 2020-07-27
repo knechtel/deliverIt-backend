@@ -4,18 +4,26 @@ Docker:
 $ docker pull mariadb:latest
 
 git clone https://github.com/knechtel/deliverIt-backend.git
-
-cd /deliver
+  ```
+Cloning into 'deliverIt-backend'...
+remote: Enumerating objects: 166, done.
+remote: Counting objects: 100% (166/166), done.
+remote: Compressing objects: 100% (113/113), done.
+remote: Total 166 (delta 58), reused 123 (delta 27), pack-reused 0
+Receiving objects: 100% (166/166), 641.79 KiB | 1.14 MiB/s, done.
+Resolving deltas: 100% (58/58), done.
+  ```
+cd deliverIt-backend/
 
 Na raiz do projeto
 
-deliver$ mvn package -DskipTests
+deliverIt-backend$ mvn package -DskipTests
 
-deliver$ docker image build -t deliver .
+deliverIt-backend$ docker image build -t deliver .
 
-deliver$ docker-compose up mariadb
+deliverIt-backend$ docker-compose up mariadb
 
-deliver$ docker-compose up deliver
+deliverIt-backend$ docker-compose up deliver
 
 Considerações 
 
