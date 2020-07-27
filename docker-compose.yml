@@ -2,6 +2,9 @@ version: "3"
 services:
   deliver:
     image: deliver
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8081:8081"
     links:
@@ -9,6 +12,9 @@ services:
 
   mariadb:
     container_name: mariadb
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: 'mariadb:latest'
     environment:
       - MYSQL_ROOT_PASSWORD=123
