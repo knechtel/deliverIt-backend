@@ -3,6 +3,12 @@ Docker:
 
 $ docker pull mariadb:latest
 
+git clone https://github.com/knechtel/deliverIt-backend.git
+
+cd /deliver
+
+Na raiz do projeto
+
 deliver$ mvn package -DskipTests
 
 deliver$ docker image build -t deliver .
