@@ -4,9 +4,9 @@ Considerações
 
 Caso tenha dificuldade com configuração do banco de dados a URL do banco de dados fica no:
 
-application.properties
+- application.properties
 
-e na 
+e na classe:
   ```
 package com.it.deliver;
 
@@ -58,7 +58,16 @@ Serviços
 <p>○ Data de Vencimento: Data</p>
 <p>○ Data de Pagamento: Data</p>
 
+formulário Angular:
+```
+http://localhost:4201/
+```
+
 ● Listagem das contas cadastradas
+  
+```
+http://localhost:8081/api/contas
+```
 
 <p>○ Nome: Texto</p>
 <p>○ Valor Original: Numeral</p>
