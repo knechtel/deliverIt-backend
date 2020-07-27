@@ -1,8 +1,19 @@
 # deliverIt-backend
+Docker:
+
+docker pull mariadb:latest
+
+deliver$ mvn package -DskipTests
+
+deliver$ docker image build -t deliver .
+
+deliver$ docker-compose up mariadb
+
+deliver$ docker-compose up deliver
 
 Considerações 
 
-Caso tenha dificuldade com configuração do banco de dados a URL do banco de dados fica no:
+Caso tenha dificuldade com a configuração do banco de dados a URL do banco de dados fica no:
 
 - application.properties
 
