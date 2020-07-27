@@ -1,7 +1,7 @@
 # deliverIt-backend
 Docker:
 
-docker pull mariadb:latest
+$ docker pull mariadb:latest
 
 deliver$ mvn package -DskipTests
 
