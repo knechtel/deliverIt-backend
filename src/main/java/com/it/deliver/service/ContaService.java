@@ -50,6 +50,7 @@ public class ContaService {
             ContaDto contaDto = new ContaDto();
             contaDto = contaDto.contaToDto(conta);
             contaDto.setValorCorrigido(Util.truncateTo(getValorCorrigido(dias,conta.getId())));
+            contaDto.setDiasAtrazo(dias.intValue());
             listContaDto.add(contaDto);
         }
         return listContaDto;

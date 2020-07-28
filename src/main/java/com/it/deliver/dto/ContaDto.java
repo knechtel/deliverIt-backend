@@ -12,6 +12,7 @@ public class ContaDto {
     private String dataVencimento;
     private String dataPagamento;
     private Double valorCorrigido;
+    private Integer diasAtrazo;
 
     public Integer getId() {
         return id;
@@ -77,5 +78,13 @@ public class ContaDto {
         contaDto.setDataPagamento(Util.localDateToSring(conta.getDataPagamento()));
         contaDto.setDataVencimento(Util.localDateToSring(conta.getDataVencimento()));
         return contaDto;
+    }
+
+    public Integer getDiasAtrazo() {
+        return diasAtrazo;
+    }
+
+    public void setDiasAtrazo(Integer diasAtrazo) {
+        this.diasAtrazo = diasAtrazo;
     }
 }
