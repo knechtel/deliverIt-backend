@@ -75,6 +75,7 @@ A utilização dessas tecnologias será considerado um diferencial.
 - Junit (foi utilizado)
 - Caso deseje a criação de um Front em AngularJs  (O layout não será avaliado) Ok.
 - Recurso de conteinerização. Docker
+
 Serviços
 
 ● Inclusão de conta a pagar
