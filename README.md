@@ -84,9 +84,9 @@ Serviços
 <p>○ Data de Vencimento: Data</p>
 <p>○ Data de Pagamento: Data</p>
 
-formulário Angular(Caso utilize docker-compose do front se utilizar npm start fica na porta 4200):
+formulário Angular( se utilizar npm start fica na porta 4200):
 ```
-http://localhost:4201/
+http://localhost:4201/  //Caso utilize docker-compose do front
 ```
 
 ● Listagem das contas cadastradas
