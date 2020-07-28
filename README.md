@@ -73,7 +73,7 @@ A utilização dessas tecnologias será considerado um diferencial.
 - Maven (foi utilizado)/ Gradle
 - Liquibase(foi utilizado) / Flyway
 - Junit (foi utilizado)
-- Caso deseje a criação de um Front em AngularJs  (O layout não será avaliado) Ok.
+- Caso deseje a criação de um Front em AngularJs  (O layout não será avaliado) Ok. https://github.com/knechtel/deliverIt-frontend
 - Recurso de conteinerização. Docker
 
 Serviços
