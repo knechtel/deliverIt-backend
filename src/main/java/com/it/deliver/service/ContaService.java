@@ -24,7 +24,7 @@ public class ContaService {
         if (dias <= 3) {
             return contaDAO.findByContaAtrazoAte3Dias(id);
         } else if (dias > 3 && dias < 5) {
-            return contaDAO.findByContaAtrazoMaior3Menor5Dias(id);
+            return contaDAO.findByContaAtrazoMaior3MenorIgual5Dias(id);
         } else if (dias > 5) {
             return contaDAO.findByContaAtrazoMaior5Dias(id);
         }

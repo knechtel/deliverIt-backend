@@ -18,8 +18,8 @@ public class RegraJurosService {
     public RegraJuros findByDays(Long dias){
         if (dias <= 3) {
             return regraJurosDAO.findByRegraJurosAteTresDias();
-        } else if (dias > 3 && dias < 5) {
-            return regraJurosDAO.findByRegraJurosMaior3Menor5();
+        } else if (dias > 3 && dias <= 5) {
+            return regraJurosDAO.findByRegraJurosMaior3MenorIgual5();
         } else if (dias > 5) {
             return regraJurosDAO.findByRegraJurosMaior5Dias();
         }

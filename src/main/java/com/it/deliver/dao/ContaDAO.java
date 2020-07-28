@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 public interface ContaDAO extends CrudRepository<Conta, Integer> {
 
     @Query("select c from Conta c join fetch c.regraJuros as r where r.dias > 3 and r.dias <5 and c.id = :id")
-    public Conta findByContaAtrazoMaior3Menor5Dias(@Param("id") Integer id);
+    public Conta findByContaAtrazoMaior3MenorIgual5Dias(@Param("id") Integer id);
 
     @Query("select c from Conta c join fetch c.regraJuros as r where r.dias <=3 and c.id = :id")
     public Conta findByContaAtrazoAte3Dias(@Param("id") Integer id);
